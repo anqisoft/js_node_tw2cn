@@ -1,0 +1,39 @@
+{
+  "name": "@dishanqian/tw2cn",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.min.js",
+  "bin": {
+    "tw2cn": "index.js"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anqisoft/js_node_tw2cn.git"
+  },
+  "keywords": [
+    "anqi",
+    "dishanqian",
+    "zh_cn",
+    "zh_tw",
+    "i18n"
+  ],
+  "author": "anqisoft@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/anqisoft/js_node_tw2cn/issues"
+  },
+  "homepage": "https://github.com/anqisoft/js_node_tw2cn#readme",
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "@dishanqian/cn_and_tw": "^0.0.3"
+  }
+}
