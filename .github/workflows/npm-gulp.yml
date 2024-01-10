@@ -24,5 +24,5 @@ jobs:
 
     - name: Build
       run: |
-        npm install @dishanqian/cn_and_tw
+        npm install gulp @dishanqian/cn_and_tw
         gulp
