@@ -113,17 +113,17 @@ exports.convert = convert;
         }
     });
     if(args.length < 2 || needShowTips) {
-        console.log('Copyright (c) 2024 anqisoft@gmail.com\n\
-            Translate file content from Traditional Chinese to Simplified Chinese.\n\n\
-            usage:\n\
-            tw2cn sourceFilename goalFilename\n\
-            eg:\n\
-            tw2cn zh_cn.txt zh_tw.txt\n\n\
-            show this tips:\n\
-            tw2cn /?|/h|/help|-?|-h|-help|--?|--h|--help\n\
-            show version:\n\
-            tw2cn /v|/version|-v|-version|--v|--version\n\
-        ');
+        console.log('Copyright (c) 2024 anqisoft@gmail.com\n'.concat(
+          'Translate file content from Traditional Chinese to Simplified Chinese.\n\n',
+          'usage:\n',
+          'tw2cn sourceFilename goalFilename\n',
+          'eg:\n',
+          'tw2cn zh_cn.txt zh_tw.txt\n\n',
+          'show this tips:\n',
+          'tw2cn /?|/h|/help|-?|-h|-help|--?|--h|--help\n',
+          'show version:\n',
+          'tw2cn /v|/version|-v|-version|--v|--version\n',
+        ));
         exit();
     }
 
