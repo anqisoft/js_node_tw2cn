@@ -4,18 +4,6 @@
  * Copyright (c) 2024 anqisoft@gmail.com
  * index.ts
  *
- * Usage: ```bash
-npm i -g @dishanqian/tw2cn
-tw2cn zh_tw.txt zh_cn.txt
-```
- *
- * Usage: ```bash
-git clone git+ssh://git@github.com/anqisoft/js_node_tw2cn
-cd js_node_tw2cn
-npm i @dishanqian/cn_and_tw
-node index.js zh_tw.txt zh_cn.txt
-```
- *
  * <en_us>
  * Created on Wed Jan 10 2024 20:09:00
  * Feature: Translate file content from Traditional Chinese to Simplified Chinese.</en_us>
@@ -30,6 +18,36 @@ node index.js zh_tw.txt zh_cn.txt
  * 功能：翻譯文件中的繁體中文到繁體中文。
  * </zh_tw>
  */
+
+/* readme.md
+### Usage1
+```bash
+npm i -g @dishanqian/tw2cn
+tw2cn zh_tw.txt zh_cn.txt
+```
+
+### Usage2
+```bash
+npm i @dishanqian/tw2cn
+```
+```javascript
+const { convert } = require('@dishanqian/tw2cn');
+// convert('sourceFilename', 'goalFilename');
+convert('zh_tw.txt', 'zh_cn.txt');
+```
+
+### Develop
+```bash
+git clone git+ssh://git@github.com/anqisoft/js_node_tw2cn
+cd js_node_tw2cn
+
+npm i @dishanqian/cn_and_tw
+
+# test
+node test/index.js zh_tw.txt zh_cn.txt
+```
+*/
+
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.convert = void 0;
 

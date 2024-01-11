@@ -6,22 +6,31 @@ Created on Wed Jan 10 2024 23:24:00<br>
 <li><zh_tw>翻譯文件中的繁體中文到簡體中文。</zh_tw></li>
 </ul>
 
-### Import
-```typescript
-import { convert } from 'https://deno.land/x/tw2cn/@v0.0.1/index.ts';
-```
-
 ### Usage1
 ```bash
-::deno run --allow-run --allow-read --allow-write https://deno.land/x/tw2cn/@v0.0.1/index.ts ~sourceFilename~ ~goalFilename~
-deno run --allow-run --allow-read --allow-write https://deno.land/x/tw2cn/@v0.0.1/index.ts zh_tw.txt zh_cn.txt
+npm i -g @dishanqian/tw2cn
+tw2cn zh_tw.txt zh_cn.txt
 ```
 
 ### Usage2
-```typescript
-import { convert } from 'https://deno.land/x/tw2cn/@v0.0.1/index.ts';
-// convert(~sourceFilename1~, ~goalFilename1~);
+```bash
+npm i @dishanqian/tw2cn
+```
+```javascript
+const { convert } = require('@dishanqian/tw2cn');
+// convert('sourceFilename', 'goalFilename');
 convert('zh_tw.txt', 'zh_cn.txt');
+```
+
+### Develop
+```bash
+git clone git+ssh://git@github.com/anqisoft/js_node_tw2cn
+cd js_node_tw2cn
+
+npm i @dishanqian/cn_and_tw
+
+# test
+node test/index.js zh_tw.txt zh_cn.txt
 ```
 
 ## This
