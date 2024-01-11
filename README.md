@@ -1,30 +1,52 @@
-# js_node_tw2cn
-
-### Usage:
-```bash
-npm i -g @dishanqian/tw2cn
-tw2cn zh_cn.txt zh_tw.txt
-```
-
-### Usage:
-```bash
-git clone git+ssh://git@github.com/anqisoft/js_node_tw2cn
-cd js_node_tw2cn
-npm i @dishanqian/cn_and_tw
-node index.js zh_cn.txt zh_tw.txt
-```
-
-## <en_us>
 Created on Wed Jan 10 2024 23:24:00<br>
-Feature: Translate file content from Traditional Chinese to Simplified Chinese.<br>
-</en_us>
+### Introduce
+<ul>
+<li><en_us>Translate file content from Traditional Chinese to Simplified Chinese.</en_us></li>
+<li><zh_cn>翻译文件中的繁体中文到简体中文。</zh_cn></li>
+<li><zh_tw>翻譯文件中的繁體中文到簡體中文。</zh_tw></li>
+</ul>
 
-## <zh_cn>
-创建：2024年1月10日 23:24:00<br>
-功能：翻译文件中的繁体中文到简体中文。<br>
-</zh_cn>
+### Import
+```typescript
+import { convert } from 'https://deno.land/x/tw2cn/@v0.0.1/index.ts';
+```
 
-## <zh_tw>
-創建：2024年1月10日 23:24:00<br>
-功能：翻譯文件中的繁體中文到简體中文。<br>
-</zh_tw>
+### Usage1
+```bash
+::deno run --allow-run --allow-read --allow-write https://deno.land/x/tw2cn/@v0.0.1/index.ts ~sourceFilename~ ~goalFilename~
+deno run --allow-run --allow-read --allow-write https://deno.land/x/tw2cn/@v0.0.1/index.ts zh_tw.txt zh_cn.txt
+```
+
+### Usage2
+```typescript
+import { convert } from 'https://deno.land/x/tw2cn/@v0.0.1/index.ts';
+// convert(~sourceFilename1~, ~goalFilename1~);
+convert('zh_tw.txt', 'zh_cn.txt');
+```
+
+## This
+### typescript
+github: https://github.com/anqisoft/ts_deno_tw2cn
+<br>deno: https://deno.land/x/tw2cn
+
+### javascript
+github: https://github.com/anqisoft/js_node_tw2cn
+<br>npmjs: https://www.npmjs.com/package/@dishanqian/tw2cn
+
+## Base
+### typescript
+github: https://github.com/anqisoft/ts_cn_and_tw
+<br>deno: https://deno.land/x/cn_and_tw
+
+### javascript
+github: https://github.com/anqisoft/js_cn_and_tw
+<br>npmjs: https://www.npmjs.com/package/@dishanqian/cn_and_tw
+
+## Sibling
+### typescript
+github: https://github.com/anqisoft/ts_deno_cn2tw
+<br>deno: https://deno.land/x/cn2tw
+
+### javascript
+github: https://github.com/anqisoft/js_node_cn2tw
+<br>npmjs: https://www.npmjs.com/package/@dishanqian/cn2tw
